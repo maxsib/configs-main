@@ -1,0 +1,40 @@
+!используемый эмулятор терминала
+yeahconsole*term:urxvt
+!высота терминала в символах
+yeahconsole*consoleHeight:47
+!отступ от левого края экрана (пикелей)
+yeahconsole*xOffset:170
+!ширина терминала
+yeahconsole*screenWidth:1050
+!вызов терминала
+yeahconsole*toggleKey:None+F12
+!цвет фона
+yeahconsole*background:#3D3C38
+!цвет шрифта
+yeahconsole*foreground:#87CEFA
+!цвет курсора
+yeahconsole*cursorColor:#5A7B2C
+!перезагужать терминал
+yeahconsole*restart:1
+!развернуь на весь экран
+yeahconsole*keyFull:None+F11
+!количесо строк истории
+yeahconsole*saveLines:5000
+!прозрачность (true/вкл-false/выкл)
+yeahconsole*transparent:true
+!уровень прозрачности
+yeahconsole*shading:80
+!полоса прокрутки
+yeahconsole*scrollBar:false
+!регулирвка высоты терминала
+yeahconsole*keySmaller:Control+m
+yeahconsole*keyBigger:Control+n
+!используемый шрифт
+!yeahconsole*font: xft:Fixed:pixelsize=16:antialias=true:hinting=true
+yeahconsole*font: xft:Terminus:pixelsize=16:antialias=true:hinting=true
+!внутренняя рамка
+yeahconsole*internalBorder:0
+!внешняя рамка
+yeahconsole*externalBorder:1
+!уровень анимации появления/выпадения
+yeahconsole*aniDelay: 60
