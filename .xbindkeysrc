@@ -1,0 +1,90 @@
+# Decrease brightness
+"xbacklight -dec 10"
+    m:0x0 + c:232
+    XF86MonBrightnessDown
+
+# Increase brightness
+"xbacklight -inc 10"
+    m:0x0 + c:233
+    XF86MonBrightnessUp
+
+# Decrease PCM
+"amixer sset PCM 5-"
+    m:0x0 + c:122
+    XF86AudioLowerVolume
+
+# Increase PCM
+"amixer sset PCM 5+"
+    m:0x0 + c:123
+    XF86AudioRaiseVolume
+
+# Mute PCM
+"amixer sset Master toggle"
+    m:0x0 + c:121
+    XF86AudioMute
+
+# Dmenu
+"dmenu_run -fn "Ubuntu Mono-13" -nb gray -nf black"
+    m:0x40 + c:33
+    Mod4 + p
+# Terminator
+#"terminator"
+#  m:0x40 + c:40
+#  Mod4 + d
+
+# Sakura
+#"xset m 2 1"
+#  m:0x40 + c:39
+#  Mod4 + s
+
+# Terminal
+"urxvtc"
+    m:0x40 + c:52
+    Mod4 + z
+
+# Termite
+"termite"
+	m:0x40 + c:53
+	Mod4 + x
+
+# xrandr
+"~/.xrandr.sh"
+    m:0x40 + c:97
+    Mod4 + KP_Home
+# poweroff
+#"sudo poweroff"
+#  m:0x41 + c:33
+#  Shift + Mod4 + p
+
+# suspend
+#"sudo pm-suspend"
+#  m:0x41 + c:39
+#  Shift + Mod4 + s
+
+# hibernate
+#"sudo pm-hibernate"
+# m:0x41 + c:43
+# Shifti + Mod4 + h
+
+# audio
+"mpc toggle"
+  m:0x0 + c:172
+  Mod2 + XF86Audioplay
+
+"mpc prev"
+  m:0x0 + c:173
+  Mod2 + XF86AudioPrev
+
+"mpc next"
+  m:0x0 + c:171
+  Mod2 + XF86AudioNext
+
+# Setkxbmap
+"setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle,grp_led:scroll""
+m:0x40 + c:84
+Mod4 + KP_Begin
+
+# xfce4-terminal
+"sudo pm-suspend"
+m:0x41 + c:55
+Shift+Mod4 + v
