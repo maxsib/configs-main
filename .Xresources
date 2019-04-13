@@ -1,0 +1,124 @@
+! General
+!urxvt*termName:  rxvt-256color
+urxvt*loginShell:         true
+urxvt*scrollBar:         false
+urxvt*secondaryScroll:    true
+urxvt*saveLines:         65535
+urxvt*cursorBlink:       true
+urxvt*urgentOnBell:       true
+!urxvt*override-redirect:false
+!urxvt*borderLess:       false
+!urxvt*internalBorder:       0
+!urxvt*externalBorder:       0
+URxvt*geometry:		82x28
+
+! Extensions
+urxvt*perl-lib:        /usr/lib/urxvt/perl/
+urxvt*perl-ext-common: default,matcher,searchable-scrollback
+urxvt*urlLauncher:     /usr/bin/opera
+urxvt*matcher.button:  1
+!  - catch ugly URLs
+urxvt.cutchars:        `()'*<>[]{|}"'
+ 
+! Appearance
+!  - use a bitmap font
+!urxvt*font:        -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+!urxvt*boldFont:    -xos4-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
+!URxvt*font: xft:LiberationMono-Italic:pixelsize=13
+!URxvt*font: xft:UbuntuMono:pixelsize=15
+!URxvt*boldFont: xft:LiberationMono-BoldItalic:bold:pixelsize=13
+!URxvt*boldFont: xft:UbuntuBold:bold:pixelsize=15
+!  - use xft for drawing fonts
+URxvt*font:       xft:Fixed:pixelsize=16:autohint=true:antialias=true:hinting=true
+!URxvt*font:       xft:Terminus:pixelsize=16:autohint=true:antialias=true:hinting=true
+!URxvt*font:       xft:Terminus:Fixed:pixelsize=14
+!URxvt*font:       xft:
+!  - cursor
+urxvt*cursorColor: #DCDCCC
+!Xcursor.theme: gentoo
+!Xcursor.theme: gentoo-blue
+!Xcursor.theme: gentoo-silver
+!Xcursor.theme: Blue
+!Xcursor.theme: Gold
+!Xcursor.theme: Silver
+!Xcursor.theme: Obsidian
+!Xcursor.size: 26
+!  - pseudo transparency
+urxvt*shading:    20
+!urxvt*fading:    60
+urxvt*transparent:true
+!urxvt*transparent:false
+!
+! Solarized color scheme for the X Window System
+!
+! http://ethanschoonover.com/solarized
+
+! Common
+
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+
+! Dark
+
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+!#define S_base0         #839496
+!#define S_base0         #00ffff
+#define S_base0         #ffffe0
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+
+! Light
+
+!#define S_base03        #fdf6e3
+!#define S_base02        #eee8d5
+!#define S_base01        #93a1a1
+!#define S_base00        #839496
+!#define S_base0         #657b83
+!#define S_base1         #586e75
+!#define S_base2         #073642
+!#define S_base3         #002b36
+
+! To only apply colors to your terminal, for example, prefix
+! ! the color assignment statement with its name. Example:
+! !
+URxvt*background:            S_base03
+
+*background:              S_base03
+*foreground:              S_base0
+*fading:                  60
+*fadeColor:               S_base03
+!*cursorColor:             S_base1
+*pointerColorBackground:  S_base01
+*pointerColorForeground:  S_base1
+
+*color0:                  S_base02
+*color1:                  S_red
+*color2:                  S_green
+*color3:                  S_yellow
+*color4:                  S_blue
+*color5:                  S_magenta
+*color6:                  S_cyan
+*color7:                  S_base2
+*color9:                  S_orange
+*color8:                  S_base03
+*color10:                 S_base01
+*color11:                 S_base00
+! font settings
+! Xft.dpi: 96
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+# include ".yeahconsolerc"
